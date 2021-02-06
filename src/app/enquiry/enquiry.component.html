@@ -1,0 +1,61 @@
+<!-- <p>enquiry works!</p> -->
+
+
+<div class="container">
+
+    <div class="jumbotron" style="background-color:rgb(175, 166, 166);">
+
+        <b><h1>ENQUIRY FORM</h1></b>
+
+
+        <form [formGroup]="enquiryform">
+
+
+            <div class="mb-3">
+
+                <b><label for=""> Name</label></b>
+
+                <input type="text" formControlName="name" name="name" id="" class="form-control">
+
+            </div>
+
+            <div class="mb-3">
+
+                <b><label for="">Phone Number</label></b>
+
+                <input type="text" formControlName="phoneNumber" name="phonenumber" id="" class="form-control">
+
+            </div>
+
+
+            <div class="mb-3">
+
+                <b><label for="">E-mail</label></b>
+
+                <input type="text" formControlName="email" name="email" id="" class="form-control">
+
+            </div>
+
+
+            <div class="mb-3">
+
+                <b><label for="">Message</label></b>
+
+                <input type="text" formControlName="message" name="message" id="" class="form-control">
+
+            </div>
+
+            <hr>
+            <div class="mb-3">
+
+               <center> <button (click)="sumbit()" class="btn btn-dark">Submit</button></center>
+               
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+</div>
